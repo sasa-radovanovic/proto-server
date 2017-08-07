@@ -14,7 +14,7 @@ Clone this repository. If you do not want to do any changes (check Custom endpoi
 
 ####  Configuration file
 
-Configuration can be on whatever path you want it. The one from example above is available in src/main/conf directory and you can use it as a role mode.
+Configuration can be on whatever path you want it. [The one from example above is available in src/main/conf directory and you can use it as a role mode.](https://github.com/sasa-radovanovic/proto-server/blob/master/src/main/conf/config.json)
 
 The file should consist of following:
 
