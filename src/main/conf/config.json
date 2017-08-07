@@ -1,0 +1,58 @@
+{
+  "port": 8083,
+  "routes": [
+    {
+      "path": "/api/hello1",
+      "method": "GET",
+      "statusCode": 200,
+      "returnType": "data|object",
+      "returnObject": {
+        "key1": "sasa",
+        "key2": "sasa2",
+        "key3": "sasa2",
+        "key4" : {
+            "key4.1" : "yuuuuuup"
+        }
+      }
+    },
+    {
+      "path": "/api/hello2/:param/hello",
+      "method": "GET",
+      "statusCode": 200,
+      "returnType": "data|array",
+      "returnObject": [
+        {"key1": "sasa"},
+        {"key2": "sasa2"}
+      ]
+    },
+    {
+      "path": "/api/some",
+      "method": "POST",
+      "statusCode": 200,
+      "returnType": "data|object",
+      "saveToVariable": "var1|object",
+      "returnObject": {
+        "saved1": "sasa",
+        "saved2": "sasa2"
+      }
+    },
+    {
+      "path": "/api/some2",
+      "method": "POST",
+      "statusCode": 200,
+      "returnType": "variable|var1",
+      "saveToVariable": "var1|object"
+    },
+    {
+      "path": "/api/hello3",
+      "method": "GET",
+      "statusCode": 200,
+      "returnType": "variable|var1"
+    },
+    {
+      "path": "/api/hello4",
+      "method": "GET",
+      "returnType": "method|MethodHandler.handleMethod"
+    }
+  ]
+}
